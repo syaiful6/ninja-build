@@ -9,6 +9,9 @@ endif
 ifeq ($(UNAME),Darwin)
 	PLATFORM := darwin
 endif
+ifeq ($(UNAME),FreeBSD)
+	PLATFORM := freebsd
+endif
 ifeq ($(UNAME),CYGWIN_NT-10.0)
 	PLATFORM := win
 endif
